@@ -13,3 +13,10 @@ for (i = 0; i < 16; i++) {
 
 container.style["grid-template-columns"] = numColumnString;
 container.style["grid-template-rows"] = numColumnString; //num of rows and num of columns is the same
+
+const cells = document.querySelectorAll(".cell");
+cells.forEach((cell) => {
+    cell.addEventListener("mouseover", (e) => {
+        cell.classList.add("moused-over");
+    })
+})
