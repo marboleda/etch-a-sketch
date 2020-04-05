@@ -20,3 +20,10 @@ cells.forEach((cell) => {
         cell.classList.add("moused-over");
     })
 })
+
+function generateNewGrid() {
+    document.querySelectorAll(".cell").forEach((cell) => cell.remove());
+
+    //gridSize = prompt("How many rows/columns would you like your grid to have?");
+
+}
