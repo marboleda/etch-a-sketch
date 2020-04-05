@@ -6,13 +6,8 @@ for (i = 0; i < (16 * 16); i++) {
     container.appendChild(newCell);
 }
 
-let numColumnString = "";
-for (i = 0; i < 16; i++) {
-    numColumnString += "auto ";
-}
-
-container.style["grid-template-columns"] = numColumnString;
-container.style["grid-template-rows"] = numColumnString; //num of rows and num of columns is the same
+container.style["grid-template-columns"] = generateGridTemplateString(16);
+container.style["grid-template-rows"] = generateGridTemplateString(16);
 
 const cells = document.querySelectorAll(".cell");
 cells.forEach((cell) => {
@@ -21,9 +16,17 @@ cells.forEach((cell) => {
     })
 })
 
+function generateGridTemplateString(numOfColumns) {
+    let numOfColumnsAndRowsString = "";
+    for (i = 0; i < numOfColumns; i++) {
+        numOfColumnsAndRowsString += "auto ";
+    }
+    return numOfColumnsAndRowsString;
+}
+
 function generateNewGrid() {
     document.querySelectorAll(".cell").forEach((cell) => cell.remove());
 
-    //gridSize = prompt("How many rows/columns would you like your grid to have?");
+    gridSize = prompt("How many rows/columns would you like your grid to have?");
 
 }
