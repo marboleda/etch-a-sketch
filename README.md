@@ -9,6 +9,7 @@ Buit an Etch-a-Sketch webpage
 ## What did I learn?
 - DOM Manipulation
 - Event handling in JavaScript
+- Using Grid layout in CSS
 
 ## To-Do
 - Add a "disco" mode which changes color to completely random RGB value
