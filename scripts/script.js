@@ -1,9 +1,10 @@
 const container = document.querySelector("#container");
 
 generateNewCells(16);
-
 container.style["grid-template-columns"] = generateGridTemplateString(16);
 container.style["grid-template-rows"] = generateGridTemplateString(16);
+
+
 
 function generateNewCells(numOfRows) {
     for (i = 0; i < (numOfRows * numOfRows); i++) {

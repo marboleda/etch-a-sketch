@@ -6,7 +6,16 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body>
-        <button onclick="generateNewGrid()">Generate New Grid</button>
+        <h1>Etch-a-Sketch</h1>
+        <button id="new-grid-button" onclick="generateNewGrid()">Generate New Grid</button>
+        <div id="mode-selection">
+            <p>Current Mode: <b>Normal</b></p>
+            <div id="mode-buttons">
+                <button>Normal</button>
+                <button>Disco</button>
+                <button>Gradual</button>
+            </div>
+        </div>
         <div id="container"></div>
         <script type="text/javascript" src="scripts/script.js"></script>       
     </body>
