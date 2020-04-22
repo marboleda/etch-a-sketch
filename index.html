@@ -9,11 +9,11 @@
         <h1>Etch-a-Sketch</h1>
         <button id="new-grid-button" onclick="generateNewGrid()">Generate New Grid</button>
         <div id="mode-selection">
-            <p>Current Mode: <b>Normal</b></p>
+            <p>Current Mode: <b id="mode">Normal</b></p>
             <div id="mode-buttons">
-                <button>Normal</button>
-                <button>Disco</button>
-                <button>Gradual</button>
+                <button id="normal-button">Normal</button>
+                <button id="disco-button">Disco</button>
+                <button id="gradual-button">Gradual</button>
             </div>
         </div>
         <div id="container"></div>
