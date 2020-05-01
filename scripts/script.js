@@ -79,7 +79,7 @@ gradualModeButton.onclick = function() {
             if (e.target.style["background-color"] != "" &&
                 e.target.style["background-color"].substr(0,12) == "rgba(0, 0, 0") {
                 const alphaVal = Number(e.target.style["background-color"].substr(-4,3));
-                e.target.style["background-color"] = `rgba(0,0,0,${alphaVal + 0.1})`;
+                e.target.style["background-color"] = `rgba(0, 0, 0, ${alphaVal + 0.1})`;
             } else if (e.target.style["background-color"] != "" &&
                        e.target.style["background-color"].substr(0,11) == "rgb(0, 0, 0") {
                 //do nothing
