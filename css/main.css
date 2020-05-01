@@ -27,8 +27,8 @@ p {
 
 #container {
     display: grid;
-    width: 960px;
-    height: 960px;
+    width: 50vh;
+    height: 50vh;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
