@@ -1,5 +1,7 @@
 ## Etch-A-Sketch
-Buit an Etch-a-Sketch webpage
+Built an Etch-a-Sketch webpage
+
+Demo: [Link](https://marboleda.github.io/etch-a-sketch)
 
 ## Languages
 - HTML
